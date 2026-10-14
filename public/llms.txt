@@ -1,0 +1,109 @@
+# Cloudspital
+
+> Cloudspital (Cloudspital Private Limited) is an Indian medtech manufacturer of Health ATM kiosks, Tele ICU / Tele PICU systems, telemedicine carts, point-of-care testing devices, and mobile medical units. AIIMS co-developed, DPIIT (Startup India) recognised, GeM listed, CDSCO approved, and ABDM/ABHA integrated. Headquartered in Greater Noida, Uttar Pradesh, with manufacturing in Kasna Industrial Area; deploys across India.
+
+## Company facts
+- Legal name: Cloudspital Private Limited
+- Founded: 2021
+- Head office: UG-04, Tower 4, NX One, Noida Extension, Greater Noida West, Uttar Pradesh 201318, India
+- Factory: Plot No. K-138, Kasna Industrial Area, Surajpur Site V, Greater Noida, Uttar Pradesh 201312, India
+- Phone: +91 75420 11187 / +91 62073 76706
+- Email: subham@cloudspital.ai
+- Area served: India (deployments incl. Bihar, Uttar Pradesh, Jharkhand, Uttarakhand, West Bengal, Indian Railways)
+- Compliance & recognition: CDSCO approved devices, ISO 13485, DPIIT / Startup India recognised, GeM listed, ABDM / NDHM compliant, ABHA integration
+- Clinical collaboration: co-developed and validated with AIIMS clinicians (incl. AIIMS Patna Tele-PICU)
+
+## Core solutions
+- [Health ATM Kiosk](https://cloudspital.ai/health-atm-kiosk/): self-service kiosk screening 30+ vital and metabolic parameters in minutes with integrated telemedicine.
+- [Tele ICU and Tele PICU](https://cloudspital.ai/tele-icu/): hub-and-spoke remote critical care connecting district/rural hospitals to intensivists 24x7.
+- [Telemedicine and Point of Care](https://cloudspital.ai/telemedicine/): telemedicine carts, portable telemedicine bags, and POCT with eSanjeevani integration.
+- [Government and Public Health Kiosks](https://cloudspital.ai/government-health-kiosk/): ABDM/ABHA integrated, GeM-procurable kiosks for government hospitals, PHCs and Ayushman Arogya Mandirs.
+- [Mobile Medical Unit](https://cloudspital.ai/mobile-medical-unit/): fully equipped MMUs for rural health camps and outreach.
+- [Products catalog](https://cloudspital.ai/products/): Medsync I–VI carts, health kiosks and mobile medical unit.
+- [Diagnostic test catalog](https://cloudspital.ai/tests/): 50+ point-of-care tests (biochemistry, immunoassays, rapid panels, strip tests).
+
+## Health ATM Kiosk
+- [What is a Health ATM](https://cloudspital.ai/health-atm-kiosk/what-is-a-health-atm/)
+- [How does a Health ATM work](https://cloudspital.ai/health-atm-kiosk/how-does-a-health-atm-work/)
+- [Parameters tested](https://cloudspital.ai/health-atm-kiosk/parameters-tested/)
+- [Price in India](https://cloudspital.ai/health-atm-kiosk/price-in-india/)
+- [Health ATM vs traditional checkup](https://cloudspital.ai/health-atm-kiosk/vs-traditional-health-checkup/)
+- [Benefits](https://cloudspital.ai/health-atm-kiosk/benefits/)
+- [AI health kiosk](https://cloudspital.ai/health-atm-kiosk/ai-health-kiosk/)
+- [For corporate wellness](https://cloudspital.ai/health-atm-kiosk/for-corporate-wellness/)
+- [For rural healthcare / PHC](https://cloudspital.ai/health-atm-kiosk/for-rural-healthcare/)
+- [For railway stations](https://cloudspital.ai/health-atm-kiosk/for-railway-stations/)
+- [For schools (Parvarish)](https://cloudspital.ai/health-atm-kiosk/for-schools/)
+- [For pharmacies](https://cloudspital.ai/health-atm-kiosk/for-pharmacies/)
+- [For old age homes](https://cloudspital.ai/health-atm-kiosk/for-old-age-homes/)
+- [For CSR projects](https://cloudspital.ai/health-atm-kiosk/for-csr-projects/)
+- [Best manufacturers in India](https://cloudspital.ai/health-atm-kiosk/best-manufacturers-in-india/)
+
+## Tele ICU and Tele PICU
+- [What is Tele ICU](https://cloudspital.ai/tele-icu/what-is-tele-icu/)
+- [Tele ICU vs Tele PICU](https://cloudspital.ai/tele-icu/tele-icu-vs-tele-picu/)
+- [How Tele ICU works](https://cloudspital.ai/tele-icu/how-tele-icu-works/)
+- [Hub and spoke model](https://cloudspital.ai/tele-icu/hub-and-spoke-model/)
+- [For rural hospitals](https://cloudspital.ai/tele-icu/for-rural-hospitals/)
+- [Tele PICU pediatric](https://cloudspital.ai/tele-icu/tele-picu-pediatric/)
+- [Setup cost in India](https://cloudspital.ai/tele-icu/setup-cost-india/)
+- [Equipment list](https://cloudspital.ai/tele-icu/equipment-list/)
+- [Remote patient monitoring](https://cloudspital.ai/tele-icu/remote-patient-monitoring/)
+- [AIIMS Patna Tele PICU case study](https://cloudspital.ai/tele-icu/aiims-patna-tele-picu/)
+
+## Telemedicine and Point of Care
+- [What is a telemedicine cart](https://cloudspital.ai/telemedicine/what-is-a-telemedicine-cart/)
+- [Point of care testing (POCT)](https://cloudspital.ai/telemedicine/point-of-care-testing/)
+- [Portable telemedicine bag](https://cloudspital.ai/telemedicine/portable-telemedicine-bag/)
+- [eSanjeevani integration](https://cloudspital.ai/telemedicine/esanjeevani-integration/)
+- [Telemedicine for PHC](https://cloudspital.ai/telemedicine/for-phc/)
+- [Cart vs health kiosk](https://cloudspital.ai/telemedicine/cart-vs-health-kiosk/)
+
+## Government and public health
+- [GeM procurement guide](https://cloudspital.ai/government-health-kiosk/gem-procurement-guide/)
+- [Ayushman Bharat ABHA integration](https://cloudspital.ai/government-health-kiosk/ayushman-bharat-abha-integration/)
+- [ABDM / NDHM compliant kiosk](https://cloudspital.ai/government-health-kiosk/abdm-ndhm-compliant/)
+- [CDSCO POCT licensing](https://cloudspital.ai/government-health-kiosk/cdsco-poct-licensing/)
+- [For government hospitals](https://cloudspital.ai/government-health-kiosk/for-government-hospitals/)
+- [Health kiosk tender India](https://cloudspital.ai/government-health-kiosk/health-kiosk-tender-india/)
+- [Ayushman Arogya Mandir kiosk](https://cloudspital.ai/government-health-kiosk/ayushman-arogya-mandir/)
+- [Health kiosk Bihar](https://cloudspital.ai/government-health-kiosk/bihar/)
+- [Health kiosk Uttar Pradesh](https://cloudspital.ai/government-health-kiosk/uttar-pradesh/)
+- [Health kiosk Uttarakhand](https://cloudspital.ai/government-health-kiosk/uttarakhand/)
+- [Health kiosk Jharkhand](https://cloudspital.ai/government-health-kiosk/jharkhand/)
+- [Health kiosk West Bengal](https://cloudspital.ai/government-health-kiosk/west-bengal/)
+
+## Mobile medical unit
+- [What is a mobile medical unit](https://cloudspital.ai/mobile-medical-unit/what-is-an-mmu/)
+- [MMU vs health kiosk](https://cloudspital.ai/mobile-medical-unit/vs-health-kiosk/)
+- [For rural health camps](https://cloudspital.ai/mobile-medical-unit/for-rural-camps/)
+- [Specifications](https://cloudspital.ai/mobile-medical-unit/specifications/)
+
+## Products
+- [Point of Care Health Kiosk](https://cloudspital.ai/products/health-kiosk/)
+- [Medsync III Tele ICU Kiosk](https://cloudspital.ai/products/medsync-iii-tele-icu-kiosk/)
+- [Medsync IV Telemedicine + POCT Cart](https://cloudspital.ai/products/medsync-iv-telemedicine-poct-cart/)
+- [Medsync V Telemedicine Cart (ICU L1)](https://cloudspital.ai/products/medsync-v-telemedicine-cart-icu/)
+- [Medsync VI Telemedicine + POCT Cart (ICU)](https://cloudspital.ai/products/medsync-vi-telemedicine-poct-cart-icu/)
+- [Medsync II Telemedicine Cart](https://cloudspital.ai/products/medsync-ii-telemedicine-cart/)
+- [Medsync I Portable Telemedicine Bag](https://cloudspital.ai/products/medsync-i-portable-telemedicine-bag/)
+- [Mobile Medical Unit](https://cloudspital.ai/products/mobile-medical-unit/)
+
+## Company and proof
+- [About us](https://cloudspital.ai/about-us/)
+- [Use cases](https://cloudspital.ai/use-cases/)
+- [Case studies](https://cloudspital.ai/case-studies/)
+- [Testimonials](https://cloudspital.ai/testimonials/)
+- [Press and media coverage](https://cloudspital.ai/press/)
+- [Contact and demo request](https://cloudspital.ai/contact/)
+
+## Resources
+- [State of preventive health screening in India (original data)](https://cloudspital.ai/resources/state-of-preventive-health-screening-india/)
+- [Health ATM buyer's guide](https://cloudspital.ai/resources/health-atm-buyers-guide/)
+- [Health kiosk glossary](https://cloudspital.ai/resources/glossary/)
+- [Blog and insights](https://cloudspital.ai/blog/)
+
+## Optional
+- [Privacy policy](https://cloudspital.ai/privacy-policy/)
+- [Terms](https://cloudspital.ai/terms/)
+- [XML sitemap](https://cloudspital.ai/sitemap.xml)
