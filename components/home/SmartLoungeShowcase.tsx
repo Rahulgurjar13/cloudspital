@@ -40,14 +40,18 @@ export function SmartLoungeShowcase() {
         </Reveal>
 
         <Reveal className="mt-8 sm:mt-12 lg:mt-16">
-          <div className="relative aspect-[16/10] overflow-hidden rounded-[30px] bg-mist sm:aspect-[21/9]">
-            <Image
-              src="/lounge.jpeg"
-              alt="Cloudspital Smart Clinic Lounge with Health ATM screening area, doctor consultation chamber, first aid station and medicine vending"
-              fill
-              sizes="(min-width: 1440px) 1320px, 100vw"
-              className="object-cover"
-            />
+          {/* Wide panorama (2000 × 745): shown whole from sm up; on phones it keeps a
+              readable height and swipes sideways instead of being cropped. */}
+          <div className="no-scrollbar overflow-x-auto overflow-y-hidden rounded-[24px] bg-mist sm:overflow-hidden sm:rounded-[30px]">
+            <div className="relative aspect-[2000/745] h-[260px] sm:h-auto sm:w-full">
+              <Image
+                src="/images/smart-clinic-lounge.webp"
+                alt="Cloudspital Smart Clinic Lounge with Health ATM screening area, doctor consultation chamber, first aid and emergency care, medicine vending machine and patient waiting area"
+                fill
+                sizes="(min-width: 1440px) 1320px, (min-width: 640px) 100vw, 700px"
+                className="object-cover"
+              />
+            </div>
           </div>
         </Reveal>
 
