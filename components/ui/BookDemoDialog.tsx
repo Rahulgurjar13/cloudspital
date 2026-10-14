@@ -20,10 +20,10 @@ function track(event: string) {
 }
 
 const FIELDS = [
-  { name: "firstName", label: "First name", placeholder: "Rajesh", type: "text", half: true },
-  { name: "lastName", label: "Last name", placeholder: "Kumar", type: "text", half: true },
-  { name: "email", label: "Work email", placeholder: "rajesh@hospital.com", type: "email" },
-  { name: "phone", label: "Phone number", placeholder: "+91 98765 43210", type: "tel" },
+  { name: "firstName", label: "First name", placeholder: "Rajesh", type: "text", half: true, pair: true },
+  { name: "lastName", label: "Last name", placeholder: "Kumar", type: "text", half: true, pair: true },
+  { name: "email", label: "Work email", placeholder: "rajesh@hospital.com", type: "email", half: true },
+  { name: "phone", label: "Phone number", placeholder: "+91 98765 43210", type: "tel", half: true },
   { name: "company", label: "Organization", placeholder: "City Hospital", type: "text" },
 ] as const;
 
@@ -135,11 +135,11 @@ export function BookDemoDialog({
                     transition={{ duration: asSheet ? 0.42 : 0.45, ease: [0.22, 1, 0.36, 1] }}
                     className={
                       asSheet
-                        ? "relative max-h-[92dvh] w-full overflow-y-auto overscroll-contain rounded-t-[28px] bg-canvas px-5 pb-[calc(1.5rem+env(safe-area-inset-bottom))] pt-3"
-                        : "relative max-h-[92vh] w-full max-w-[560px] overflow-y-auto rounded-[28px] bg-canvas p-6 sm:p-10"
+                        ? "relative max-h-[96dvh] w-full overflow-y-auto overscroll-contain rounded-t-[28px] bg-canvas px-5 pb-[calc(1.25rem+env(safe-area-inset-bottom))] pt-3"
+                        : "relative max-h-[92vh] w-full max-w-[620px] overflow-y-auto rounded-[28px] bg-canvas p-6 sm:p-9"
                     }
                   >
-                    {asSheet ? <div className="mx-auto mb-5 h-1.5 w-10 rounded-full bg-faint/70" aria-hidden="true" /> : null}
+                    {asSheet ? <div className="mx-auto mb-3 h-1.5 w-10 rounded-full bg-faint/70" aria-hidden="true" /> : null}
                     <button
                       onClick={close}
                       aria-label="Close"
@@ -152,7 +152,7 @@ export function BookDemoDialog({
                       </svg>
                     </button>
 
-                    <p className="t-label text-muted">[&nbsp;Book a demo&nbsp;]</p>
+                    <p className="text-[12px] uppercase tracking-[0.08em] text-primary">Book a demo</p>
 
                     {sent ? (
                       <div className="pt-6">
@@ -169,15 +169,15 @@ export function BookDemoDialog({
                       </div>
                     ) : (
                       <>
-                        <h2 id="book-demo-title" className="mt-4 t-h3 text-ink">
+                        <h2 id="book-demo-title" className="mt-2 pr-12 text-[clamp(26px,2.4vw,34px)] leading-[1.15] tracking-[-0.05em] text-ink">
                           See Cloudspital in action
                         </h2>
-                        <p className="mt-3 t-body text-muted">
+                        <p className="mt-2 t-small text-muted sm:t-body">
                           Tell us about your facility or program and we&apos;ll arrange a live
                           walkthrough.
                         </p>
 
-                        <form onSubmit={handleSubmit} className="mt-8 grid grid-cols-2 gap-4">
+                        <form onSubmit={handleSubmit} className="mt-6 grid grid-cols-2 gap-x-4 gap-y-3.5">
                           {error && (
                             <p className="col-span-2 rounded-xl border border-accent/30 bg-accent/5 px-4 py-3 t-small text-ink">
                               {error}
@@ -186,7 +186,7 @@ export function BookDemoDialog({
                           {FIELDS.map((f) => (
                             <label
                               key={f.name}
-                              className={`flex flex-col gap-2 ${"half" in f && f.half ? "col-span-2 sm:col-span-1" : "col-span-2"}`}
+                              className={`flex min-w-0 flex-col gap-1.5 ${"pair" in f && f.pair ? "col-span-1" : "half" in f && f.half ? "col-span-2 sm:col-span-1" : "col-span-2"}`}
                             >
                               <span className="t-small text-ink">{f.label}*</span>
                               <input
@@ -194,11 +194,11 @@ export function BookDemoDialog({
                                 type={f.type}
                                 required
                                 placeholder={f.placeholder}
-                                className="field"
+                                className="field max-sm:!py-3"
                               />
                             </label>
                           ))}
-                          <div className="col-span-2 pt-2">
+                          <div className="col-span-2 pt-1.5">
                             <ArrowButton type="submit" block disabled={isSubmitting}>
                               {isSubmitting ? "Submitting…" : "Request demo"}
                             </ArrowButton>
