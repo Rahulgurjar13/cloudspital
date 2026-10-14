@@ -4,11 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { SITE } from "@/lib/constants";
-import { getSpokeLinks } from "@/lib/site-structure";
 import { BookDemoDialog } from "@/components/ui/BookDemoDialog";
-import { ArrowButton, ArrowIcon } from "@/components/ui/ArrowButton";
-import { HUB_LABELS, COMPANY_LINKS, SOLUTION_HUBS, resourceLinks as buildResourceLinks, productLinks as buildProductLinks, CALL_URL, WHATSAPP_URL } from "./nav-data";
+import { ArrowButton } from "@/components/ui/ArrowButton";
+import { COMPANY_LINKS, SOLUTION_HUBS, CALL_URL, WHATSAPP_URL } from "./nav-data";
+import { SolutionsMenu, ProductsMenu, ResourcesMenu, CompanyMenu, MenuFooter } from "./MegaMenu";
 // Trimmed copy of cloudspital-new.webp (no empty margin) so the mark reads at header size.
 import cloudspitalLogo from "@/public/cloudspital-logo.png";
 
@@ -90,8 +91,6 @@ export function Navbar({
   const closeAll = () => setOpen(null);
 
   const solutionHubs = SOLUTION_HUBS;
-  const resourceLinks = buildResourceLinks();
-  const productLinks = buildProductLinks(products);
 
   const isActive = (key: MenuKey) => {
     if (key === "solutions") return solutionHubs.some((h) => pathname.startsWith(`/${h.slug}`));
@@ -113,11 +112,6 @@ export function Navbar({
       <Chevron open={open === key} />
     </button>
   );
-
-  const linkCls = (href: string) =>
-    `group flex items-center justify-between gap-3 rounded-lg px-3 py-2 t-body transition-colors hover:bg-mist ${
-      pathname === href ? "text-primary" : "text-muted hover:text-ink"
-    }`;
 
   return (
     <header
@@ -227,65 +221,21 @@ export function Navbar({
       {open && (
         <div className="absolute inset-x-0 top-full hidden lg:block">
           <div className="mx-auto max-w-[1440px] px-[60px]">
-            <div className="rounded-[20px] border border-line bg-white p-6 shadow-[0_32px_80px_-24px_rgba(15,23,42,0.45)]">
-              {open === "solutions" && (
-                <div className="grid grid-cols-5 gap-6">
-                  {solutionHubs.map((hub) => (
-                    <div key={hub.slug} className="flex flex-col">
-                      <Link
-                        href={`/${hub.slug}/`}
-                        onClick={closeAll}
-                        className="group mb-2 flex items-center justify-between gap-2 rounded-lg bg-mist px-3 py-3 t-h6 text-ink transition-colors hover:bg-primary hover:text-white"
-                      >
-                        {HUB_LABELS[hub.slug]}
-                        <ArrowIcon className="h-4 w-4" />
-                      </Link>
-                      <ul className="max-h-[52vh] overflow-y-auto">
-                        {getSpokeLinks(hub.slug).map((s) => {
-                          const href = `/${s.hub}/${s.slug}/`;
-                          return (
-                            <li key={href}>
-                              <Link href={href} onClick={closeAll} className={`${linkCls(href)} !px-3 !py-1.5 t-small`}>
-                                {s.h1}
-                              </Link>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              {open !== "solutions" && (
-                <div className="grid grid-cols-12 gap-6">
-                  <div className="col-span-4 flex flex-col justify-between rounded-2xl bg-primary p-6 text-white">
-                    <p className="t-label text-white/85">
-                      [&nbsp;{open === "products" ? "Products" : open === "resources" ? "Resources" : "Company"}&nbsp;]
-                    </p>
-                    <p className="mt-10 t-h5 text-white">
-                      {open === "products"
-                        ? "Health kiosks, Medsync telemedicine carts and mobile medical units, built in India."
-                        : open === "resources"
-                          ? "Original data, buyer guides and a plain-English glossary for decision makers."
-                          : "AIIMS co-developed, DPIIT recognised and GeM listed medtech for India."}
-                    </p>
-                  </div>
-                  <ul className="col-span-8 grid grid-cols-2 content-start gap-x-6 gap-y-1">
-                    {(open === "products" ? productLinks : open === "resources" ? resourceLinks : COMPANY_LINKS).map(
-                      (l) => (
-                        <li key={l.href}>
-                          <Link href={l.href} onClick={closeAll} className={linkCls(l.href)}>
-                            {l.label}
-                            <ArrowIcon className="h-4 w-4 opacity-0 transition-opacity group-hover:opacity-100" />
-                          </Link>
-                        </li>
-                      ),
-                    )}
-                  </ul>
-                </div>
-              )}
-            </div>
+            <motion.div
+              key={open}
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+              className="overflow-hidden rounded-[24px] border border-line bg-white shadow-[0_32px_80px_-24px_rgba(15,23,42,0.45)]"
+            >
+              <div className="p-8">
+                {open === "solutions" && <SolutionsMenu pathname={pathname} onNavigate={closeAll} />}
+                {open === "products" && <ProductsMenu pathname={pathname} onNavigate={closeAll} products={products} />}
+                {open === "resources" && <ResourcesMenu pathname={pathname} onNavigate={closeAll} />}
+                {open === "company" && <CompanyMenu pathname={pathname} onNavigate={closeAll} />}
+              </div>
+              <MenuFooter />
+            </motion.div>
           </div>
         </div>
       )}
