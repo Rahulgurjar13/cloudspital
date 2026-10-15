@@ -232,9 +232,13 @@ export function Solutions() {
                     strokeWidth={0.6}
                     className="pointer-events-none absolute -right-10 -top-10 h-56 w-56 text-white/[0.1]"
                   />
-                  <TopRow it={it} />
-                  <div className="relative mt-10">
-                    <Detail it={it} titleClass="text-[26px] leading-[1.1] tracking-[-0.05em]" />
+                  {/* the whole card opens the hub; its own links stay tappable above this */}
+                  <Link href={`/${it.slug}/`} aria-hidden="true" tabIndex={-1} className="absolute inset-0" />
+                  <div className="pointer-events-none relative flex flex-1 flex-col [&_a]:pointer-events-auto">
+                    <TopRow it={it} />
+                    <div className="relative mt-10">
+                      <Detail it={it} titleClass="text-[26px] leading-[1.1] tracking-[-0.05em]" />
+                    </div>
                   </div>
                 </article>
               );
